@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+    
+    <base href="./" target="_blank">
+    <title>Kevin Andres' Assignments</title>
+  </head>
+
+  <body>
+    <h1>CS 213 Assignments</h1>
+    <hr>
+
+    <ul>
+      <li><a href="week02/index.html">Week 02</a></li>
+      <li><a href="week02/index.html">Week 03</a></li>
+      <li><a href="week02/index.html">Week 04</a></li>
+      <li><a href="week02/index.html">Week 05</a></li>
+      <li><a href="week02/index.html">Week 06</a></li>
+      <li><a href="week02/index.html">Week 07</a></li>
+      <li><a href="week02/index.html">Week 08</a></li>
+      <li><a href="week02/index.html">Week 09</a></li>
+      <li><a href="week02/index.html">Week 10</a></li>
+      <li><a href="week02/index.html">Week 11</a></li>
+      <li><a href="week02/index.html">Week 12</a></li>
+      <li><a href="week02/index.html">Week 13</a></li>
+    </ul>
+
+    <img src="approval.gif" width="320" height="240" alt="Yeah!">
+
+  </body>
+</html>
