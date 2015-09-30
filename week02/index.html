@@ -1,7 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    notes:  validator.w3.org complains about me using the <font></font> tag, however we are explicitly
+            told to use inline styles for borders, colors, etc.  So I wasn't sure what to do here
+-->
 
 <html>
     <head>
+        <meta charset="UTF-8">
+
         <style>
             h1 {
                 text-align: center;
@@ -21,58 +29,52 @@
 
 	<body>
         <h1>
-            <font face="verdana" color="lightsteelblue" text-align>Kevin Andres' Home Page</font>
+            <font face="verdana" color="lightsteelblue">Kevin Andres' Home Page</font>
         </h1>
         <h3>
             <font face="courier"><a href="../index.html">CS 213 Assignments</a></font>
         </h3>
         <hr />
         
-            <ul>
-                <img src="me.PNG" alt="me" style="z-index: -1" height="20%" width="20%" />
+            <ul>                
                 <li>My name (in case you didn't read the title): Kevin Andres</li>
                 <li>My major: Computer Engineering</li>
                 <li>Where I'm from: <a href="redding.html">Redding, CA</a></li>
                 <li>Check out my school schedule: <a href="myschedule.html">My Schedule</a></li>
             </ul>
 
-        <!--There is probably a more elegant way to handle the cut in the horizontal rule, but this works.-->
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
         <hr />
 
-        <p>
-            <font face="arial">
-                One of my favorite quotes, which comes from Jim Lovell an astronaut on
-                Apollo 8 and 13.  This quote comes from his interview in the 2007 movie
-                <i>In the Shadow of the Moon</i>
-                <blockquote>
-                    <font color="green">
-                        We learned a lot about the Moon, but what we really learned
-                        was about the Earth. The fact that just from the distance of the Moon
-                        you can put your thumb up and you can hide the Earth behind your thumb.
-                        Everything that you've ever known, your loved ones, your business,
-                        the problems of the Earth itself-all behind your thumb. And how
-                        insignificant we really all are, but then how fortunate we are to have
-                        this body and to be able to enjoy loving here amongst the beauty of the
-                        Earth itself.
-                    </font>
-                </blockquote>
-                Another one of my personal favorites, given by Alan Shephard:
+        <font face="arial">
+            One of my favorite quotes, which comes from Jim Lovell an astronaut on
+            Apollo 8 and 13.  This quote comes from his interview in the 2007 movie
+            <i>In the Shadow of the Moon</i>
+        </font>
 
-                <blockquote>
-                    <font color="red">
-                        If somebody'd said before the flight, "Are you going to get carried away
-                        looking at the earth from the moon?" I would have say, "No, no way." But
-                        yet when I first looked back at the earth, standing on the moon, I cried.
-                    </font>
-                </blockquote>
+        <blockquote>
+            <font color="green">
+                We learned a lot about the Moon, but what we really learned
+                was about the Earth. The fact that just from the distance of the Moon
+                you can put your thumb up and you can hide the Earth behind your thumb.
+                Everything that you've ever known, your loved ones, your business,
+                the problems of the Earth itself-all behind your thumb. And how
+                insignificant we really all are, but then how fortunate we are to have
+                this body and to be able to enjoy loving here amongst the beauty of the
+                Earth itself.
             </font>
-        </p>
+        </blockquote>
+
+        <font face="arial">
+            Another one of my personal favorites, given by Alan Shephard:
+        </font>
+
+        <blockquote>
+            <font color="red">
+                If somebody'd said before the flight, "Are you going to get carried away
+                looking at the earth from the moon?" I would have say, "No, no way." But
+                yet when I first looked back at the earth, standing on the moon, I cried.
+            </font>
+        </blockquote>            
+   
     </body>
 </html>
