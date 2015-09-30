@@ -1,8 +1,14 @@
-﻿body {
+﻿/*********************************************/
+/****************Tag Section******************/
+/*********************************************/
+
+/*Define the page background and font family*/
+body {
     background-color: #222222;    
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/**/
 a {
     text-decoration: none;
     color: white;
@@ -13,6 +19,9 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/*********************************************/
+/****************ID Section******************/
+/*********************************************/
 
 #container {
     background-color: #4a4a4a;
