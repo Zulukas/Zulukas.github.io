@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Build-a-Sat</title>
+    <link rel="stylesheet" type="text/css" href="week07.css" />
+    <script type="text/javascript" src="week07.js"></script> 
+</head>
+<body onload="getCost()">
+    <div id="container">
+        <div id="header">
+            <h1>Checkout</h1>
+        </div>
+        <div id="main">
+            <h2>Shipping Address</h2>
+            <form action="" id="addressForm">
+                <table>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>Full Name:  </span>
+                        </td>
+                        <td>
+                            <input name="FullName" onblur="validateName(this.value, 'NameErrImg');" size="50" />
+                        </td>
+                        <td>
+                            <img src="redx.jpg" width="20" height="20" id="NameErrImg" style="visibility:hidden" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>Address Line 1:  </span>
+                        </td>
+                        <td>
+                            <input name="Address1" onblur="validateAddressLine1(this.value, 'AL1ErrImg');" size="50" placeholder="Street address, P.O. box, company name, c/o" />
+                        </td>
+                        <td>
+                            <img src="redx.jpg" width="20" height="20" id="AL1ErrImg" style="visibility:hidden" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>Address Line 2:  </span>
+                        </td>
+                        <td>
+                            <!--I chose not to validate this field because there isn't any required input-->
+                            <input name="Address2" size="50" placeholder="Apartment, suite, unit, building, floor, etc" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>City:  </span>
+                        </td>
+                        <td>
+                            <input name="City" size="50" />
+                        </td>
+                        <td>
+                            <img src="redx.jpg" onblur="validateCity(this.value, '');" width="20" height="20" id="CityErrImg" style="visibility:hidden" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>State:  </span>
+                        </td>
+                        <td>
+                            <input name="State" onblur="validateState(this.value, 'StateErrImg')" size="50" />
+                        </td>
+                        <td>
+                            <img src="redx.jpg" width="20" height="20" id="StateErrImg" style="visibility:hidden" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>ZIP:  </span>
+                        </td>
+                        <td>
+                            <input name="ZIP" onblur="validateZIP(this.value, 'ZIPErrImg')" size="50" />
+                        </td>
+                        <td>
+                            <img src="redx.jpg" width="20" height="20" id="ZIPErrImg" style="visibility:hidden" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressStyle">
+                            <span>Phone Number: </span>
+                        </td>
+                        <td>
+                            <input name="Phone" onblur="validatePhoneNumber(this.value, 'PhoneErrImg')" size="50" />
+                        </td>
+                        <td>
+                            <img src="redx.jpg" width="20" height="20" id="PhoneErrImg" style="visibility:hidden" />
+                        </td>
+                    </tr>
+                </table>                
+            </form>
+            <h2>Payment Information</h2>
+            <table id="ccinfo">
+                <tr>
+                    <td><span>Credit Card Number:</span></td>
+                    <td><input name="CC" onblur="validateCreditCard();" size="45" /></td>
+                </tr>
+                <tr>
+                    <td class="AddressStyle">Expiration Month:</td>
+                    <td>
+                        <form name="Expiration">
+                            <select name="Month">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="AddressStyle">Expiration Year:</td>
+                    <td>
+                        <form name="Expiration">
+                            <select name="Month">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>                                
+                            </select>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="AddressStyle">CVV Number: </td>
+                    <td>
+                        <input name="cvv" onblur="validateCVV()" size="3" />
+                    </td>
+                </tr>
+            </table>
+            <h2>Confirm Order</h2>
+            <span id="basecost"></span>
+            <p>ran out of time on this assignment.  Didn't realize it was going to require more than 10 hours of work...</p>
+        </div>
+    </div>
+</body>
+</html>

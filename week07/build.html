@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Build-a-Sat</title>
+    <link rel="stylesheet" type="text/css" href="week07.css" />
+    <script type="text/javascript" src="week07.js"></script> 
+</head>
+<body onload="resetSelection();">
+    <div id="container" name="container">
+        <div id="header"><h2>Build-a-Sat</h2></div>
+
+        <div id="main" name="main">
+            <h3>Main Parts</h3>
+
+            <table class="gridtable" align="center" name="dropdowns">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product</th>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            Solar Panel Size:
+                        </td>
+                        <td>
+                            <form action="action_page.php" name="solarpanels">
+                                <select name="Solar Panels" style="width:200px">
+                                    <option value="small">Small Array</option>
+                                    <option value="medium">Medium Array</option>
+                                    <option value="large">Large Array</option>
+                                    <option value="xl">Extra Large Array</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Battery Size:
+                        </td>
+                        <td>
+                            <form action="action_page.php" name="BatterySizes">
+                                <select name="Battery Sizes" style="width:200px">
+                                    <option value="75ah">75 Amp-Hours</option>
+                                    <option value="150ah">150 Amp-Hours</option>
+                                    <option value="225ah">225 Amp-Hours</option>
+                                    <option value="300ah">300 Amp-Hours</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Transmitters:
+                        </td>
+                        <td>
+                            <form action="action_page.php" name="Transmitters">
+                                <select name="Num Transmitters" style="width:200px">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Receivers:
+                        </td>
+                        <td>
+                            <form action="action_page.php" name="Receivers">
+                                <select name="Num Receivers" style="width:200px">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bandwidth:
+                        </td>
+                        <td>
+                            <form action="action_page.php" name="Bandwidth">
+                                <select name="Bandwidth" style="width:200px">
+                                    <option value="500">500Mbps</option>
+                                    <option value="1000">1Gbps</option>
+                                    <option value="10000">10Gbps</option>
+                                    <option value="100000">100Gbps</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Orbit Height:
+                        </td>
+                        <td>
+                            <form action="action_page.php" name="Orbit">
+                                <select name="Orbit Height" style="width:200px">
+                                    <option value="1">Sun-synchronous(705km)</option>
+                                    <option value="2">GPS(20,200km)</option>
+                                    <option value="3">Geostationary(35,780km)</option>
+                                    <option value="4">Lunar Orbit(384,000km)</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            <h3>Instrumentation</h3>
+            <table class="gridtable">
+                <tr class="TableRowStyle">
+                    <td>
+                        <input type="checkbox" name="observation" id="observation"/>
+                    </td>
+                    <td>Observational</td>
+                    <td>Equipment added to the satellite which will allow the owner to monitor parts of the Earth (REQUIRES GOVERNMENT APPROVAL)</td>
+                </tr>
+                <tr class="TableRowStyle">
+                    <td>
+                        <input type="checkbox" name="meteorology" id="meteorology"/>
+                    </td>
+                    <td>Meteorological</td>
+                    <td>Special observational equipment which monitors cloud patterns to help predict weather</td>
+                </tr>
+                <tr class="TableRowStyle">
+                    <td>
+                        <input type="checkbox" name="positioning" id="positioning"/>
+                    </td>
+                    <td>Global Positioning</td>
+                    <td>Allows this satellite to pinpoint locations on earth with the assistance of at least 2 other satellites</td>
+                </tr>
+                <tr class="TableRowStyle">
+                    <td>
+                        <input type="checkbox" name="spotbeam" id="spotbeam"/>
+                    </td>
+                    <td>Spot Beam Instruments</td>
+                    <td>Provides satellite service to a specific part of the Earth (requires Geostationary Oribt)</td>
+                </tr>
+                <tr class="TableRowStyle">
+                    <td>
+                        <input type="checkbox" name="astronomical" id="astronomical"/>
+                    </td>
+                    <td>Astronomy Instruments</td>
+                    <td>Added equipment to watch the stars and planets.  Includes special sensors to view the Sun</td>
+                </tr>
+            </table>
+            <p></p>
+            <div style="text-align:center">
+                <form onreset="resetSelection()">
+                    <input type="reset" />
+                </form>
+                <p></p>
+                
+                <button type="button" onclick="submitSelection();" style="margin: 20px">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
