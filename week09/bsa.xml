@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bsa SYSTEM "bsa.dtd">
+<bsa>
+  <council name ="Great Texas Council">
+    <troop number="126" name="Arlen Troop">
+      <scout>
+        <firstname>Davey</firstname>
+        <lastname>Jones</lastname>
+        <address>
+          <street>1234 Bluebird Street</street>
+          <city>Arlen</city>
+          <state>Texas</state>
+        </address>
+        <phone>123-456-1234</phone>
+        <rank date-earned="1-1-2015">Eagle</rank>
+        <meritbadge date-earned="1-1-2014">First Aid</meritbadge>
+        <meritbadge date-earned="2-2-2014">Swimming</meritbadge>
+        <meritbadge date-earned="3-3-2014">Life Science</meritbadge>
+        <meritbadge date-earned="4-4-2014">Environmental Science</meritbadge>
+        <meritbadge date-earned="5-5-2014">Camping</meritbadge>
+        <meritbadge date-earned="6-6-2014">Marksmanship</meritbadge>
+        <meritbadge date-earned="7-7-2014">Archery</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Bobby</firstname>
+        <lastname>Hill</lastname>
+        <address>
+          <street>84 Rainey Street</street>
+          <city>Arlen</city>
+          <state>Texas</state>
+        </address>
+        <phone>123-512-1691</phone>
+        <rank date-earned="3-30-2001">TenderFoot</rank>        
+      </scout>
+      <scout>
+        <firstname>Andy</firstname>
+        <lastname>Brown</lastname>
+        <address>
+          <street>523 Main Street</street>
+          <city>Arlen</city>
+          <state>Texas</state>
+        </address>
+        <phone>123-916-3800</phone>
+        <meritbadge date-earned="5-6-2005">Camping</meritbadge>
+      </scout>
+    </troop>    
+  </council>
+  <council name="South Eastern Idaho Council">
+    <troop number="512" name="Rexburg Troop">
+      <scout>
+        <firstname>Thomas</firstname>
+        <lastname>Skousen</lastname>
+        <address>
+          <street>51S 9W</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <phone>208-625-0026</phone>
+        <rank date-earned="9-12-2009">Eagle</rank>
+        <rank date-earned="8-1-2008">Life</rank>
+        <rank date-earned="12-6-2007">Star</rank>
+        <rank date-earned="4-7-2007">1stClass</rank>
+        <rank date-earned="11-3-2006">2ndClass</rank>
+        <rank date-earned="1-1-2005">Tenderfoot</rank>
+        <meritbadge date-earned="1-1-2005">First Aid</meritbadge>
+        <meritbadge date-earned="2-2-2005">Swimming</meritbadge>
+        <meritbadge date-earned="3-3-2006">Life Science</meritbadge>
+        <meritbadge date-earned="4-4-2006">Environmental Science</meritbadge>
+        <meritbadge date-earned="5-5-2007">Camping</meritbadge>
+        <meritbadge date-earned="6-6-2007">Marksmanship</meritbadge>
+        <meritbadge date-earned="7-7-2008">Archery</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Joe</firstname>
+        <lastname>Schmoe</lastname>
+        <address>
+          <street>617 Magnolia Way</street>
+          <city>Rexburg</city>
+          <state>Idaho</state>
+        </address>
+        <phone>208-915-4300</phone>
+      </scout>
+    </troop>
+    <troop number="877" name="Idaho Falls Troop">
+      <scout>
+        <firstname>Garrett</firstname>
+        <lastname>Hamelin</lastname>
+        <address>
+          <street>8123 Venice Court</street>
+          <city>Idaho Falls</city>
+          <state>Idaho</state>
+        </address>
+        <phone>208-222-1111</phone>
+        <rank date-earned="5-31-2012">Tenderfoot</rank>
+        <meritbadge date-earned="5-10-2012">Environmental Science</meritbadge>
+      </scout>
+      <scout>
+        <firstname>Doug</firstname>
+        <lastname>Dawson</lastname>
+        <address>
+          <street>41 E Train Street</street>
+          <city>Idaho Falls</city>
+          <state>Idaho</state>
+        </address>
+        <phone>208-341-5767</phone>        
+      </scout>
+    </troop>
+  </council>
+</bsa>
