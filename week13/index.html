@@ -105,7 +105,8 @@
 					if (special === 2) {
 						gameHasBeenInitialized = false;
 						snakeIsDead = false;
-						return;
+						doOnceOnDeath = true;
+						return;						
 					}
 					if (snakeIsDead) {
 						if (doOnceOnDeath) {
